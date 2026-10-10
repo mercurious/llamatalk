@@ -89,7 +89,9 @@ test/test_models.sh   # models.sh against a local mirror; also runs on the handh
 ```
 
 The build fetches each source at its pinned commit and compiles in an Ubuntu 24.04 container (glibc 2.39; ROCKNIX
-has 2.41). About 5 minutes at `JOBS=3` with a 3 GB memory cap (`MEM`, `MEMSWAP`).
+has 2.41). About 5 minutes at `JOBS=3` with a 3 GB memory cap (`MEM`, `MEMSWAP`). `ENGINE=docker` builds with docker
+instead of podman. To release from a build server: `DRY=1 build/release.sh` there, copy the tarball into `dist/`, then
+`PREBUILT=1 build/release.sh` where gh can upload.
 
 ## Licence
 
