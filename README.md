@@ -84,6 +84,7 @@ On an arm64 Linux host with podman and git:
 
 ```sh
 build/build.sh        # -> dist/llamatalk/ and dist/llamatalk-<version>-aarch64.tar.gz
+build/release.sh      # builds main, checks the tarball, uploads a draft GitHub release v<VERSION> (DRY=1: no upload)
 test/test_models.sh   # models.sh against a local mirror; also runs on the handheld
 ```
 
