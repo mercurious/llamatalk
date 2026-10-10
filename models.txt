@@ -1,0 +1,11 @@
+# The models llamatalk's apps use, downloaded by models.sh from Hugging Face: <set> <repo> <file> [saved as]
+# An app asks for sets: retro-voice-chat needs asr e2b tts (and e4b for smart mode), autogamer e2b e4b tts.
+# None are redistributed here: each has its own licence or terms of use on its model card (THIRD_PARTY.md).
+asr  ggml-org/Qwen3-ASR-0.6B-GGUF          Qwen3-ASR-0.6B-Q8_0.gguf
+asr  ggml-org/Qwen3-ASR-0.6B-GGUF          mmproj-Qwen3-ASR-0.6B-Q8_0.gguf
+e2b  google/gemma-4-E2B-it-qat-q4_0-gguf   gemma-4-E2B_q4_0-it.gguf
+e4b  google/gemma-4-E4B-it-qat-q4_0-gguf   gemma-4-E4B_q4_0-it.gguf
+tts  Serveurperso/pocket-tts-GGUF          pocket-tts-english_2026-09-Q8_0.gguf
+tts  Serveurperso/pocket-tts-GGUF          pocket-tts-english_2026-09-voices.gguf
+# Not yet here: the MTP draft head mtp-gemma-4-E4B-it-Q4_0.gguf (+10-30% generation speed with E4B); its download
+# source still has to be found. An app uses it when the file is in the models directory.
